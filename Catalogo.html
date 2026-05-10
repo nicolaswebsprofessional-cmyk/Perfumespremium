@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UOMUO | Catálogo Premium</title>
+<meta name="description" content="Catálogo premium UOMUO - Perfumes icónicos y exclusivos.">
+
+<style>
+:root{
+    --black:#060606;
+    --dark:#111111;
+    --silver:#c7c7c7;
+    --white:#ffffff;
+    --soft:#e9e9e9;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:var(--black);
+    color:var(--white);
+}
+
+/* NAV */
+nav{
+    width:100%;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:24px 8%;
+    background:rgba(0,0,0,.80);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.logo{
+    font-size:32px;
+    letter-spacing:7px;
+    font-weight:300;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:var(--silver);
+    transition:.3s;
+    font-size:14px;
+    letter-spacing:1px;
+}
+
+nav a:hover{
+    color:white;
+}
+
+/* HEADER */
+.hero{
+    text-align:center;
+    padding:90px 8% 50px;
+}
+
+.hero small{
+    color:var(--silver);
+    letter-spacing:4px;
+}
+
+.hero h1{
+    font-size:64px;
+    font-weight:300;
+    margin:20px 0;
+}
+
+.hero p{
+    max-width:780px;
+    margin:auto;
+    line-height:1.9;
+    color:#d0d0d0;
+    font-size:18px;
+}
+
+/* GRID */
+.catalogo{
+    width:88%;
+    margin:auto;
+    padding:30px 0 90px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:linear-gradient(145deg,#101010,#171717);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:22px;
+    padding:35px;
+    transition:.35s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    border-color:rgba(255,255,255,.22);
+    box-shadow:0 20px 45px rgba(0,0,0,.35);
+}
+
+.number{
+    font-size:14px;
+    color:#8f8f8f;
+    margin-bottom:18px;
+    letter-spacing:2px;
+}
+
+.card h2{
+    font-weight:300;
+    margin-bottom:15px;
+    font-size:28px;
+}
+
+.tipo{
+    display:inline-block;
+    margin-bottom:18px;
+    color:black;
+    background:white;
+    padding:7px 14px;
+    border-radius:30px;
+    font-size:12px;
+    font-weight:bold;
+}
+
+.card p{
+    color:#cfcfcf;
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+.precio{
+    font-size:26px;
+    color:white;
+    font-weight:bold;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:35px;
+    color:#9a9a9a;
+    border-top:1px solid rgba(255,255,255,.06);
+}
+
+@media(max-width:900px){
+    .hero h1{
+        font-size:44px;
+    }
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+}
+</style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">UOMUO</div>
+
+    <ul>
+        <li><a href="./index.html">INICIO</a></li>
+        <li><a href="./catalogo.html">CATÁLOGO</a></li>
+        <li><a href="./contacto.html">CONTACTO</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <small>SELECCIÓN DE ALTA PERFUMERÍA</small>
+    <h1>Catálogo Signature</h1>
+
+    <p>
+        Una colección creada para quienes entienden que un perfume
+        no es un accesorio: es identidad, presencia y memoria.
+    </p>
+</section>
+
+<section class="catalogo">
+
+<div class="card">
+<div class="number">01</div>
+<h2>Dior Sauvage</h2>
+<div class="tipo">MASCULINO</div>
+<p>Notas frescas y amaderadas con presencia magnética.</p>
+<div class="precio">S/ 490</div>
+</div>
+
+<div class="card">
+<div class="number">02</div>
+<h2>Bleu de Chanel</h2>
+<div class="tipo">UNISEX PREMIUM</div>
+<p>Sofisticación limpia, moderna y profundamente elegante.</p>
+<div class="precio">S/ 620</div>
+</div>
+
+<div class="card">
+<div class="number">03</div>
+<h2>Libre</h2>
+<div class="tipo">FEMENINO</div>
+<p>Flor blanca, vainilla y sensualidad refinada.</p>
+<div class="precio">S/ 540</div>
+</div>
+
+<div class="card">
+<div class="number">04</div>
+<h2>Le Male</h2>
+<div class="tipo">MASCULINO</div>
+<p>Icónico, dulce y con carácter inolvidable.</p>
+<div class="precio">S/ 430</div>
+</div>
+
+<div class="card">
+<div class="number">05</div>
+<h2>Coco Mademoiselle</h2>
+<div class="tipo">FEMENINO</div>
+<p>Elegancia francesa, fresca y seductora.</p>
+<div class="precio">S/ 670</div>
+</div>
+
+<div class="card">
+<div class="number">06</div>
+<h2>Versace Eros</h2>
+<div class="tipo">UNISEX</div>
+<p>Pasión intensa con fondo ambarado y moderno.</p>
+<div class="precio">S/ 380</div>
+</div>
+
+<div class="card">
+<div class="number">07</div>
+<h2>Tom Ford Noir</h2>
+<div class="tipo">PREMIUM</div>
+<p>Oscuro, elegante y extremadamente exclusivo.</p>
+<div class="precio">S/ 790</div>
+</div>
+
+<div class="card">
+<div class="number">08</div>
+<h2>1 Million</h2>
+<div class="tipo">MASCULINO</div>
+<p>Poder, lujo y presencia dominante.</p>
+<div class="precio">S/ 410</div>
+</div>
+
+<div class="card">
+<div class="number">09</div>
+<h2>Good Girl</h2>
+<div class="tipo">FEMENINO</div>
+<p>Intensa, glamorosa y sofisticadamente sensual.</p>
+<div class="precio">S/ 580</div>
+</div>
+
+<div class="card">
+<div class="number">10</div>
+<h2>Creed Aventus</h2>
+<div class="tipo">LUXURY</div>
+<p>Una obra maestra de la perfumería exclusiva.</p>
+<div class="precio">S/ 1450</div>
+</div>
+
+</section>
+
+<footer>
+© 2026 UOMUO · Perfumespremium
+</footer>
+
+</body>
+</html>
