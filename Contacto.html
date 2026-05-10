@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UOMUO | Contacto</title>
+<meta name="description" content="Contacto UOMUO - Boutique premium de perfumes en Lima, Perú.">
+
+<style>
+:root{
+    --black:#060606;
+    --dark:#111111;
+    --silver:#c7c7c7;
+    --white:#ffffff;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:var(--black);
+    color:var(--white);
+}
+
+/* NAV */
+nav{
+    width:100%;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:24px 8%;
+    background:rgba(0,0,0,.82);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.logo{
+    font-size:32px;
+    letter-spacing:7px;
+    font-weight:300;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:var(--silver);
+    transition:.3s;
+    font-size:14px;
+    letter-spacing:1px;
+}
+
+nav a:hover{
+    color:white;
+}
+
+/* HERO */
+.hero{
+    padding:100px 8% 60px;
+    text-align:center;
+}
+
+.hero small{
+    color:var(--silver);
+    letter-spacing:4px;
+}
+
+.hero h1{
+    margin-top:18px;
+    font-size:64px;
+    font-weight:300;
+}
+
+.hero p{
+    max-width:760px;
+    margin:25px auto;
+    line-height:1.9;
+    color:#d0d0d0;
+    font-size:18px;
+}
+
+/* CONTENT */
+.container{
+    width:88%;
+    margin:auto;
+    padding-bottom:80px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:linear-gradient(145deg,#101010,#171717);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:22px;
+    padding:40px;
+    transition:.35s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    border-color:rgba(255,255,255,.2);
+}
+
+.card h2{
+    margin-bottom:22px;
+    font-weight:300;
+    font-size:30px;
+}
+
+.card p{
+    color:#d0d0d0;
+    line-height:2;
+    margin-bottom:10px;
+}
+
+.social{
+    display:flex
